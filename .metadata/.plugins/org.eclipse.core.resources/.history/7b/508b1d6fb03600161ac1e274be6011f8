@@ -1,0 +1,47 @@
+package com.example.demo3;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        TextView tv2 = (TextView)findViewById(R.id.textView2);
+        Resources r = this.getBaseContext().getResources();
+        Drawable d =r.getDrawable(R.drawable.e);
+        tv2.setBackgroundDrawable(d);
+        String info = this.getString(R.string.college);
+        
+        Button button = (Button)findViewById(R.id.button1);
+        final TextView tv = (TextView)findViewById(R.id.textView2);
+        button.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				String info="无缘的你，不是来的太早，就是太迟";
+				tv.setText(info);
+			}
+		});
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+}

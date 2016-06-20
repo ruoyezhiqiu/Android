@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.example.demo2.R.id"/>
+<fullyQualifiedTypeName name="com.example.demo2.MainActivity.MyEvent"/>
+<fullyQualifiedTypeName name="com.example.demo3.R.id"/>
+<fullyQualifiedTypeName name="android.content.res.Resources"/>
+<fullyQualifiedTypeName name="com.example.demo3.R.drawable"/>
+<fullyQualifiedTypeName name="android.graphics.drawable.Drawable"/>
+<fullyQualifiedTypeName name="com.example.demo3.R.string"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="android.util.DisplayMetrics"/>
+<fullyQualifiedTypeName name="com.example.demo4.R.id"/>
+<fullyQualifiedTypeName name="com.example.demo6.R.id"/>
+<fullyQualifiedTypeName name="com.example.demo6.R.layout"/>
+<fullyQualifiedTypeName name="com.example.demo7.R.id"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.os.Bundle"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="android.widget.EditText"/>
+<fullyQualifiedTypeName name="com.example.demo8.R.id"/>
+</qualifiedTypeNameHistroy>
