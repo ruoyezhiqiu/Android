@@ -1,0 +1,66 @@
+package com.example.demo9;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+    EditText et;
+    TextView tv;
+    Button button;
+    
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        //从容器中获取这些组件，注意ID正确
+        et=(EditText)findViewById(R.id.editText1);
+        tv=(TextView)findViewById(R.id.textView1);
+        button=(Button)findViewById(R.id.button1);
+        
+        //给按钮添加事件
+        button.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				//其实没有用
+				String str =et.getText().toString();
+				//生成包裹对象
+				Bundle bundle= new Bundle();
+				//向包裹中放入东西
+				bundle.putString("key", "钵");
+				//创建使者对象
+				Intent in = new Intent();
+				//使者携带包裹
+				in.putExtras(bundle);
+				//从哪里来，到哪里去
+				in.setClass(MainActivity.this, A.class);
+				//跳转，forResult代表很多年后要回来
+				startActivityForResult(in,20);
+			}
+		});
+        
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    //回到的地方，大雁塔 1.走的时间携带的整数 2.回来时携带的整数 3.携带的数据
+    protected void onActivityResult(int requestCode,int resultCode,Intent data){
+    	String str=data.getExtras().getString("key");
+    	System.out.println(requestCode+":"+resultCode+":"+str);
+    	tv.setText(str);
+    }
+    
+}

@@ -8,12 +8,10 @@
 <stringAttribute key="com.android.ide.eclipse.adt.target" value="AUTO"/>
 <booleanAttribute key="com.android.ide.eclipse.adt.wipedata" value="false"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/demo5"/>
-<listEntry value="/demo5/AndroidManifest.xml"/>
+<listEntry value="/demo_05"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="4"/>
-<listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="demo5"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="demo_05"/>
 </launchConfiguration>
